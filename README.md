@@ -9,7 +9,6 @@ This project addresses a strategic conflict within a premium e-commerce company 
 ![Matplotlib](https://img.shields.io/badge/-Matplotlib-000000?style=flat&logo=matplotlib&logoColor=white) 
 ![Seaborn](https://img.shields.io/badge/-Seaborn-4A86A8?style=flat&logo=seaborn&logoColor=white)
 ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white) 
-![Tableau](https://img.shields.io/badge/-Tableau-E97627?style=flat&logo=tableau&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat&amp;logo=jupyter&amp;logoColor=white>)
 
 
@@ -19,22 +18,17 @@ This project addresses a strategic conflict within a premium e-commerce company 
 ### 📈 Key Findings & Results
 
 
-* **The 10-20% Sweet Spot** :  Discounts in the 10-20% range are the company's primary financial engine, generating over €2.38M in revenue.
+* **The 10-20% "Sweet Spot"**: Discounts in the 10-20% range represent the company's primary financial engine, generating over €2.38M in revenue. This suggests that peak          revenue is most efficiently achieved at moderate discount levels.
 
-* **Diminishing Returns on Deep Discounts** : Discounts exceeding 30% suffer a significant drop in both order volume and financial efficiency, contributing only €0.57M to 
-    total revenue. This proves that extreme price cuts fail to incentivise higher unit sales and should be strictly limited.
+* **Diminishing Returns on Deep Discounts**: Discounts exceeding 30% are associated with a marked decrease in both order volume and financial efficiency, contributing only        €0.57M to total revenue. This signals that extreme price cuts do not effectively incentivize higher unit sales and should be deployed only with specific strategic           intent.
 
-* **Brand Value Remains Strong** :Despite the use of discounts, the Average Order Value (AOV) trended upward from €120 to over €200, proving that promotional activity did 
-    not cheapen the brand in the eyes of consumers.
+* **Brand Value Stability**: The Average Order Value (AOV) trended upward from €120 to over €200 throughout the period. This suggests that targeted discounting has not            devalued the brand perception for core customers.
 
-* **Seasonality is Critical**:Peak holiday events (Black Friday/Christmas) drive revenue spikes up to 8x higher than average weeks, confirming the necessity of a seasonal 
-    discount strategy.
+* **Seasonality and Revenue Drivers**: Peak holiday events (e.g., Black Friday/Christmas) drive revenue spikes up to 8x higher than average weeks. The analysis reveals a          positive correlation (r = 0.6469) between order volume and revenue, supporting the conclusion that transaction frequency is a primary growth driver.
 
-* **Category-Specific Strategy**  :  Discounting requirements vary significantly by product type. While Smartphones maintain strong sales with lower average 
-discounts 11.05%, Laptops and Computers show a higher average discount of 22.55%. My analysis reveals this is driven by a high volume of Used/Refurbished units and End-
-of-Life inventory (such as older Mac mini models), which require aggressive price cuts (>30%) to liquidate. Over half of the products in this category are sold with at 
-least a 13% discount, primarily to move these non-new items. Meanwhile, Accessories act as "customer hooks," utilizing aggressive discounts (25%+) to drive the traffic 
-necessary for overall brand growth. 
+* **Correlation between Discounts and Revenue**: The calculated correlation of r = 0.4826 between total discount and revenue suggests a moderate positive relationship. This       further confirms that revenue growth is driven by a complex mix of timing and demand rather than discounts alone.
+
+* **Category-Specific Strategy**: Discounting requirements vary significantly by product type. Smartphones maintain consistent performance with an average discount of           11.05%,while Laptops show a higher average of 22.55%. This difference indicates a targeted strategy to liquidate refurbished or end-of-life inventory—such as older Mac      mini models—without impacting the premium status of high-end offerings.
 
 
   
@@ -46,15 +40,16 @@ necessary for overall brand growth.
   #### 1. Growth & Correlation Analysis
  
  
- These charts settle the debate on whether promotions drive financial growth.
+   These charts settle the debate on whether promotions drive financial growth.
 
 * The **sub plot** demonstrates that volume is a reliable driver of revenue, showing that even with discounts, total revenue rise consistently alongside the number of 
   products sold.
-
+  
 	
    <img src="Images/Volume-Revenue%20dual%20plot.png" width="600">
 
-
+* The figure suggests order volume is closely related to revenue, a trend further supported by the average number of 1.12 items per order.
+  
    <img src="Images/Weekly%20Revenue%20VS%20Order%20Volume.png" width="600">
 
 
@@ -70,7 +65,7 @@ necessary for overall brand growth.
 
 	
 
-* This comparison shows that peak revenue is often achieved at controlled discount levels, suggesting a "sweet spot" for promotional intensity.
+* "This comparison suggests that peak revenue is often achieved at controlled discount levels, supporting the existence of a 'sweet spot' for promotional intensity.
 
 
     <img src="Images/Monthly%20Revenue%20Vs%20Average%20Discount%20percentage.png" width="600">
@@ -79,26 +74,26 @@ necessary for overall brand growth.
 
 #### 3. Brand Health & Category Strategy 
 
- * These charts provide the evidence needed to protect the brand's premium status while clearing stock.
+ * These charts support the strategy of protecting the brand's premium status while effectively managing stock levels
 
- * The increase in Average Order Value from €120 to over €200 proves that discounting has not devalued the brand for  core customers.
+ * The increase in Average Order Value from €120 to over €200 suggests that targeted discounting has not devalued the brand for core customers, as reflected by the shift in    transaction value.
 
 
     <img src="Images/Monthly%20AOV.png" width="600">
 
- * This plot highlights Smartphones as a premium category maintained with a controlled 11.05% discount. In contrast, the 22.55% average seen in Laptops reflects a            targeted strategy to liquidate used and refurbished inventory without devaluing the new, high-end models
+ * The data suggests that Smartphones are maintained as a premium category through a controlled 11.05% discount, whereas the 22.55% average for Laptops supports a targeted     strategy to liquidate used and refurbished inventory without devaluing high-end models.
 
     <img src="Images/Average%20Discount%20Percentage%20By%20Category.png" width="600">
 
 
- * The bar chart showing which categories bring in the most total revenue.
+ * The data suggests that specific categories dominate revenue, supporting the strategy of prioritizing high-value segments to drive financial performance.
 
    <img src="Images/Total%20Revenue%20By%20Category.png" width="600">
 
 
-   ## Strategic Recommendations
+   ### 💡Strategic Recommendations
 
-  To optimize the balance between growth and brand protection, I recommend the following actions:
+      To optimize the balance between growth and brand protection, I recommend the following actions:
 
 1. **Standardize the 10-20% Tier**: Establish this as the default promotional range to protect margins.
 
@@ -111,8 +106,7 @@ necessary for overall brand growth.
 
 ### 🧹 Data Cleaning & Methodology
 
-To ensure the analysis was based on reliable data, the raw dataset underwent the following cleaning and refinement process:
-
+   To ensure the analysis was based on reliable data, the raw dataset underwent the following cleaning and refinement process:
 
 * **Defining Realized Revenue**: The raw dataset contained 293,983 orderlines, including cancelled, abandoned, and unpaid orders. I filtered this down to only 'Completed' transactions to ensure findings represent actual money in the bank.
 
@@ -134,15 +128,30 @@ To ensure the analysis was based on reliable data, the raw dataset underwent the
     * `percentage_discount`: Ratio of discount to unit price for elasticity analysis.
 
 ### Project Structure
-
-**•	data** :  Contains the raw and cleaned CSV datasets .
-
-**•	images** : Contains the generated visualisations used in the analysis.
-
-**•	discount_analysis.ipynb** : The main Jupyter Notebook containing all data cleaning, exploration, and visualisations.
-
-**•	README.md**: Project summary and findings.
-
+```
+E-commerce-Discount-Analysis/
+├── cleaned dataset/              # Processed data for analysis
+│   ├── brands.csv
+│   ├── orderlines_cl.csv
+│   ├── orders_cl.csv
+│   └── products_cl.csv
+├── Original Dataset(uncleaned)/  # Raw source files
+│   ├── brands.csv
+│   ├── orderlines.csv
+│   ├── orders.csv
+│   └── products.csv
+├── images/                       # Generated visualisations
+│   ├── Average Discount Percentage By Category.png
+│   ├── Monthly AOV.png
+│   ├── Monthly Revenue Vs Average Discount percentage.png
+│   ├── Total Revenue By Category.png
+│   ├── Volume-Revenue dual plot.png
+│   ├── Weekly Revenue Impact Of Holiday Sales.png
+│   └── Weekly Revenue VS Order Volume.png
+├── 01_Data_cleaning.ipynb        # Data preparation notebook
+├── 02_Data_analysis.ipynb        # Main analysis notebook
+└── README.md                     # Project documentation
+```
 
 ### 🛠 Environment & Tools
 * **Development Environment:** Google Colab
@@ -158,6 +167,13 @@ To ensure the analysis was based on reliable data, the raw dataset underwent the
 2.	**Run the Code**: Open the notebook in Google Colab and run all cells.
   
 3.	**Dependencies**: Ensure you have imported the required libraries: import pandas numpy matplotlib seaborn.
+
+
+## 👤 Contact & Connect
+**Sruthi Raajan** 
+* **LinkedIn:** https://www.linkedin.com/in/sruthi-raajan
+* **GitHub Portfolio:** https://github.com/sruthi-raajan9
+* **Email:** sruthiraajan9@gmail.com
 
 
 
