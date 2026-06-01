@@ -1,8 +1,4 @@
 # 🚀 Optimising E-commerce Discount Strategies to Balance Revenue and Brand Equity
-
-### 📌 Project Overview
-This project addresses a strategic conflict within a premium e-commerce company regarding whether promotional discounting drives sustainable growth or undermines the brand's "Quality Segment" positioning. By identifying a **"sweet spot" discounting tier of 10-20%**, I reconciled the Marketing Team's customer acquisition goals with the Board's demand for high profit margins and brand protection.
-
 ---
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white) 
 ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white) 
@@ -11,8 +7,8 @@ This project addresses a strategic conflict within a premium e-commerce company 
 ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white) 
 ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat&amp;logo=jupyter&amp;logoColor=white>)
 
-
-
+### 📌 Project Overview
+This project addresses a strategic conflict within a premium e-commerce company regarding whether promotional discounting drives sustainable growth or undermines the brand's "Quality Segment" positioning. By identifying a **"sweet spot" discounting tier of 10-20%**, I reconciled the Marketing Team's customer acquisition goals with the Board's demand for high profit margins and brand protection.
 
 
 ### 📈 Key Findings & Results
